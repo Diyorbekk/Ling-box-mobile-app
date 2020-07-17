@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+
+header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 36px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #3D3D3D;
+}
+
+header h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    color: #3D3D3D;
+}
+
+header .mt-2 {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+header h2::after {
+    content: '';
+    display: block;
+    margin-top: 0;
+    width: 17%;
+    height: 2px;
+    background: linear-gradient(192.04deg, #2272FE 0%, #8339FF 51.04%, #A700FF 100%);
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease-in infinite;
+}
+
+header ul {
+    margin-top: 20px;
+}
+
+header ul li {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+
+header ul li span {
+    font-size: 16px;
+    font-weight: 500;
+    background: #6D00F8;
+    font-family: "Roboto Medium", sans-serif;
+    color: #e3dada;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0 0 0 25px;
+}
+
+.flex_column h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #3D3D3D;
+}
+
+.flex_column p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    background: transparent;
+    margin-top: 9px;
+    color: #3D3D3D;
+}
+
+.sale {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(257.34deg, #DC03FF -13.86%, #359CFF 40.89%, #00CCFF 99.83%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease-in infinite;
+}
+
+.sale p {
+    width: 63%;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: unset;
+}
+
+.sale p span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.salePro {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration-line: line-through;
+    color: #292929;
+}
+
+
+.saleP {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #191a98;
+}
+
+.Sale {
+    font-family: 'Gilroy ExtraBold', sans-serif;
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 2.5px;
+    color: #191a98;
+}
+
+.bigFA{
+    font-weight: 900;
+    font-size: 42px;
+}
+
+
+
+.SaleP {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #191a98;
+}
+
+.saleEko {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #292929;
+    margin-top: 30px;
+}
+
+
+.saleEkoP {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #191a98;
+}
+
+main button {
+    font-size: 25px;
+    margin: 41px 0;
+    width: 300px;
+    height: 35px;
+    outline-color: transparent;
+    letter-spacing: unset;
+    color: #FFFFFF;
+    background: linear-gradient(282.63deg, #5403FF -7.8%, #00CCFF 39.71%, #AAEBFF 48.65%, #00CCFF 54.79%);
+    border-radius: 6px;
+    border: none;
+    border-color: white;
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease-in infinite;
+}
+
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../fonts/3964.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Gilroy ExtraBold";
+    src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot");
+    src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff") format("woff"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.svg#Gilroy ExtraBold") format("svg");
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@media (max-width: 360px) {
+    header .mt-2 {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .flex_column h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        color: #3D3D3D;
+    }
+
+    .sale p {
+        width: 74%;
+        font-size: 23px;
+        font-weight: 600;
+        text-align: center;
+        word-spacing: 4px;
+        letter-spacing: unset;
+    }
+}
+
+@media (max-width: 320px) {
+    header .mt-2 {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .flex_column h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: #3D3D3D;
+    }
+}

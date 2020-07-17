@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    margin-bottom: 115px;
+    width: 100%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px 0 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav .fa {
+    font-size: 25px;
+}
+
+.settings p {
+    font-size: 20px;
+}
+
+
+.font_set{
+    position: relative;
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.settingSize{
+    position: absolute;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    margin-top: 9px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 6px 5px 5px rgba(128, 128, 128, 0.11);
+}
+
+
+.dblock{
+    display: block;
+}
+
+.settingSize .FontSize{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #000000a1;
+    display: flex;
+    background: transparent;
+    border: 1px solid #000000a1;
+    outline-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingSize .backColor{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid #000000a1;
+    outline-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.dnone{
+    display: none;
+}
+
+
+.icon-tran180{
+    animation: Animation 1s ease;
+}
+.icon-tran360{
+    animation: Animation2 1s ease;
+}
+
+
+
+.text {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.text h3 {
+    margin: 8px 0;
+    font-weight: normal;
+}
+
+.text h2{
+    font-weight: normal;
+}
+
+.white{
+    background: white;
+    border-radius: 50%;
+    color: black;
+    border: 1px solid black;
+}
+
+.backSetWhite{
+    background: white;
+}
+
+.backBlack{
+    fill: black;
+}
+
+.black{
+    background: black;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid black;
+}
+
+
+.text p {
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.text_flex {
+    display: flex;
+    padding: 0 24px;
+    margin-top: 25px;
+}
+
+.text_flex p {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.ClickCog{
+    width: 20px;
+    height: 20px;
+}
+
+.pleer {
+    padding: 0 25px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 3px;
+    background: #b4b4b4;
+    position: relative;
+    top: 0px;
+    border-radius: 17%;
+}
+
+.progress_bar_cont {
+    width: 20%;
+    height: 3px;
+    background: #522fc9;
+    position: absolute;
+    top: 0;
+    border-radius: 17%;
+}
+
+.progress_bar_cont span {
+    width: 8px;
+    height: 8px;
+    left: 100%;
+    border-radius: 50%;
+    top: -3px;
+    background: #522fc9;
+    border: 2px solid #58585800;
+    position: absolute;
+    box-shadow: 0 0 0 5px #544c4c45;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.time p {
+    color: #b4b4b4;
+    font-size: 13px;
+}
+
+.media_pleer{
+    position: fixed;
+    width: 100%;
+    bottom: -1px;
+    background: white;
+}
+
+.play {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play .palyIcon {
+    font-size: 30px;
+    width: 25px;
+    margin: 0px 40px;
+    fill:#5431cb;
+}
+
+.button_play {
+    position: absolute;
+    /* bottom: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+}
+
+.button_play button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    outline-color: transparent;
+    border: none;
+
+}
+
+@keyframes Animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Animation2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+header .back {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline-color: transparent;
+    top: 1%;
+    left: 8%;
+    font-size: 30px;
+    color: #C4C4C4;
+}
+
+form {
+    width: 100%;
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_column {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-top: 20px;
+}
+
+.form_column input {
+    width: 100%;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 5px;
+    outline: #4400FF;
+}
+
+label {
+    color: #B6B6B6;
+    font-size: 13px;
+}
+
+.form_column input::placeholder {
+    color: #B6B6B6;
+    font-size: 13px;
+    text-align: left;
+}
+
+.form_column select{
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    outline: #4400FF;
+}
+
+.form_flex {
+    display: flex;
+}
+
+.form_flex_1 input {
+    width: 100%;
+    height: 35px;
+    text-align: left;
+}
+
+input::placeholder{
+    text-align: left;
+}
+
+.marginL {
+    margin-left: 10px;
+}
+
+.form_flex_2 input {
+    width: 50%;
+    height: 35px;
+}
+
+.form_flex_3 ul {
+    display: flex;
+}
+
+.form_flex_3 ul li {
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    margin-right: 45px;
+    float: left;
+    width: 60px;
+    height: 15px;
+}
+
+.form_flex_3 ul li input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.form_flex_3 ul li label {
+    display: block;
+    position: relative;
+    font-weight: 300;
+    font-size: 13px;
+    padding-left: 34px;
+    margin: 17px 0 18px 0;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.form_flex_3 ul li .check {
+    display: block;
+    position: absolute;
+    border: 1px solid #0075FF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 0;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.form_flex_3 .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    width: 80%;
+    top: 2px;
+    left: 2px;
+    height: 80%;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+.form_flex_3 [type=radio]:checked~.check {
+    border: 1px solid #0075FF;
+}
+
+.form_flex_3 [type=radio]:checked~.check::before {
+    background: #0075FF;
+}
+
+.form_flex_3 [type=radio]:checked~label {
+    color: #0075FF;
+}
+
+.form_flex_4 ul {
+    display: flex;
+}
+
+.form_flex_4 ul li {
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    margin-right: 25px;
+    float: left;
+    height: 15px;
+}
+
+.form_flex_4 ul li input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.mt-5 {
+    margin-top: 15px;
+}
+
+.mt-6 {
+    margin-top: 20px;
+}
+
+.form_flex_4 ul li label {
+    display: block;
+    position: relative;
+    font-weight: 300;
+    font-size: 13px;
+    padding-left: 34px;
+    margin: 17px 0 18px 0;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.form_flex_4 ul li .check {
+    display: block;
+    position: absolute;
+    border: 1px solid #0075FF;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 0;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.form_flex_4 .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+.form_flex_4 [type=radio]:checked~.check {
+    border: 1px solid #0075FF;
+}
+
+.form_flex_4 [type=radio]:checked~.check::before {
+    background: #0075FF;
+}
+
+.form_flex_4 [type=radio]:checked~label {
+    color: #0075FF;
+}
+
+.form_flex_1 input::placeholder {
+    color: #B6B6B6;
+    font-size: 13px;
+    text-align: left;
+}
+
+.form_flex_1 #time::placeholder,
+.form_flex_1 #time2::placeholder,
+.form_flex_1 #time3::placeholder{
+    text-align: center;
+    color: #0079fe;
+}
+
+
+.marginY {
+    margin: 0 10px;
+}
+
+.marginX {
+    margin-left: 11px;
+}
+
+header form button {
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(270.9deg, #5403FF 0.33%, #00CCFF 99.93%);
+    border-radius: 5px;
+    position: relative;
+    bottom: 0;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-top: 36px;
+    margin-bottom: 25px;
+    outline-color: transparent;
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease-in infinite;
+}
+
+#p1, #p2, #p3
+{
+    color: #FF0000;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+input[type='date'] {
+    -moz-appearance: textfield;
+}
+
+::-webkit-datetime-edit
+::-webkit-datetime-edit-fields-wrapper
+::-webkit-datetime-edit-text
+::-webkit-datetime-edit-month-field
+::-webkit-datetime-edit-day-field
+::-webkit-datetime-edit-year-field
+::-webkit-inner-spin-button
+::-webkit-calendar-picker-indicator

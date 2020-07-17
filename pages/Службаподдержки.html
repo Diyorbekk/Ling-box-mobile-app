@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../fonts/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Уведомление.css">
+    <title>Служба поддержки</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <i class="fa fa-angle-left back" onclick="window.location.href='boxes.html'"></i>
+        <h2 class="title_info">Служба поддержки</h2>
+      </div>
+
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <p class="mb-0 text-center titleText">Выберите один из пунктов и напишите свое сообщение в поле ниже</p>
+        <div class="inside mt-4 mb-1"></div>
+
+        <div class="textArea">
+          <div class="ClickTextArea"></div>
+          <textarea class="TextareaInput"></textarea>
+        </div>
+
+        <button type="button" class="mt-4">Отправить</button>
+      </div>
+    </header>
+
+
+    <script src="../js/jQuery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".inside").append('<p><a id="msg" class="Hashtag" href="#">#СообщитьОПроблема</a></p>');
+        $(".inside").append('<p><a id="question" class="Hashtag" href="#">#ЗадатьВопрос</a></p>');
+        $(".inside").append('<p><a id="suggestions" class="Hashtag" href="#">#Предложения</a></p>');
+        $('#msg').on('click', function () {
+                  $(".ClickTextArea").append('<p><a id="msg" class="Hashtag" href="#">#СообщитьОПроблема</a></p>');
+        }
+        );
+        $('#question').on('click', function () {
+                  $(".ClickTextArea").append('<p><a id="question" class="Hashtag" href="#">#ЗадатьВопрос</a></p>');
+        }
+        );
+        $('#suggestions').on('click', function () {
+          $(".ClickTextArea").append('<p><a id="myLink" class="Hashtag" href="#">#Предложения</a></p>');
+        });
+      });
+    </script>
+  </body>
+</html>

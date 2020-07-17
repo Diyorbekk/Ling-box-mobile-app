@@ -1,0 +1,63 @@
+@media (max-width: 320px){
+    .oplata .img_size {
+        width: 61px;
+        height: 22px;
+    }
+    .oplata li label .mar_ri {
+        margin-left: 5px;
+        width: 61px;
+        height: 22px;
+    }
+    .oplata .title_info {
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .metodika .mt-2 {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .metodika .flex_column h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: #3D3D3D;
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    .metodika .mt-2 {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .metodika .flex_column h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        color: #3D3D3D;
+    }
+
+    .metodika_main .sale p {
+        width: 74%;
+        font-size: 23px;
+        font-weight: 600;
+        text-align: center;
+        word-spacing: 4px;
+        letter-spacing: unset;
+    }
+}
+
+@media (min-width: 411px){
+
+    .oplata .title_info {
+        position: absolute;
+        left: 28%;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

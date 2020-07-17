@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../fonts/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Уведомление.css">
+    <title>Уведомления</title>
+
+</head>
+<body>
+<header>
+    <div class="title">
+        <i class="fa fa-angle-left back" onclick="window.location.href='boxes.html'"></i>
+        <h2 class="title_info">Уведомления</h2>
+    </div>
+
+    <div class="d-flex justify-content-center flex-column w-100 px-4" id="app">
+        <div class="d-flex justify-content-start align-items-start mb-4 NotificationBox"  v-for="mes in message">
+            <div class="image_box">
+                <img src="../images/Layer_23.png" alt="">
+            </div>
+
+            <div class="d-flex flex-column NotificationBoxIn" onclick="window.location.href='Уведомления_2.html'">
+                <div class="d-flex justify-content-between NotificationTitle">
+                    <p class="mb-0">{{ mes.MessageTitle}}</p>
+
+                    <p class="mb-0">{{ mes.MessageData}}</p>
+                </div>
+
+                <div class="d-flex flex-column NotificationTitle">
+                    <p class="NotificationTextTitle">{{ mes.MessageTextTitle}}</p>
+                    <p class="NotificationText">{{ mes.MessageText}}</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</header>
+
+<script src="../js/vue.js"></script>
+<script src="../js/jQuery.min.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: [
+                {
+                    MessageTitle: `Билеты`,
+                    MessageData: `14 апр.`,
+                    MessageTextTitle: `Оплата билетов / Ticket Payment Synerergy online forum`,
+                    MessageText: `Synegy online forum Здраствуйте! Вы забронировали билет на Synerergy online forum`,
+                },
+                {
+                    MessageTitle: `Алекс Яновский`,
+                    MessageData: `14 апр.`,
+                    MessageTextTitle: `Оплата билетов / Ticket Payment Synerergy online forum`,
+                    MessageText: `Synegy online forum Здраствуйте! Вы забронировали билет на Synerergy online forum`,
+                },
+                {
+                    MessageTitle: `Алекс Яновский`,
+                    MessageData: `14 апр.`,
+                    MessageTextTitle: `Оплата билетов / Ticket Payment Synerergy online forum`,
+                    MessageText: `Synegy online forum Здраствуйте! Вы забронировали билет на Synerergy online forum`,
+                },
+                {
+                    MessageTitle: `Алекс Яновский`,
+                    MessageData: `14 апр.`,
+                    MessageTextTitle: `Оплата билетов / Ticket Payment Synerergy online forum`,
+                    MessageText: `Synegy online forum Здраствуйте! Вы забронировали билет на Synerergy online forum`,
+                },
+                {
+                    MessageTitle: `Алекс Яновский`,
+                    MessageData: `14 апр.`,
+                    MessageTextTitle: `Оплата билетов / Ticket Payment Synerergy online forum`,
+                    MessageText: `Synegy online forum Здраствуйте! Вы забронировали билет на Synerergy online forum`,
+                },
+                {
+                    MessageTitle: `Алекс Яновский`,
+                    MessageData: `14 апр.`,
+                    MessageTextTitle: `Оплата билетов / Ticket Payment Synerergy online forum`,
+                    MessageText: `Synegy online forum Здраствуйте! Вы забронировали билет на Synerergy online forum`,
+                },
+                {
+                    MessageTitle: `Алекс Яновский`,
+                    MessageData: `14 апр.`,
+                    MessageTextTitle: `Оплата билетов / Ticket Payment Synerergy online forum`,
+                    MessageText: `Synegy online forum Здраствуйте! Вы забронировали билет на Synerergy online forum`,
+                },
+            ]
+
+        }
+    })
+</script>
+
+<script>
+    $('.NotificationBox:last-child .NotificationBoxIn').append('                <div class="toggleAccordion">\n' +
+        '                    <div class="d-flex mt-2">\n' +
+        '                        <div class="toggleAccordionImg mr-2">\n' +
+        '                            <i class="fa fa-image"></i>\n' +
+        '\n' +
+        '                            <p class="mb-0 ml-2 toggleAccordionText">image001.png</p>\n' +
+        '                        </div>\n' +
+        '                        <div class="toggleAccordionImg">\n' +
+        '                            <i class="fa fa-image"></i>\n' +
+        '\n' +
+        '                            <p class="mb-0 ml-2 toggleAccordionText">image001.png</p>\n' +
+        '                        </div>\n' +
+        '                    </div>\n' +
+        '                </div>')
+</script>
+
+
+</body>
+</html>

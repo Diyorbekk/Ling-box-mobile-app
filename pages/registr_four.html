@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/AllCssStyle.css">
+    <link rel="stylesheet" href="../css/intlInputPhone.css">
+    <title>Вход</title>
+</head>
+
+<body>
+<header class="registrTwo">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-center">Введите код, который мы отправили на e-mail odilov.sr@gmail.com</h1>
+
+        <p class="text-center Change"><span class="ChangeNum" onclick="window.location.href='../pages/registr_two.html'">Изменить адрес электронной почты</span> или <span class="ChangeNum" onclick="window.location.href='../pages/registr.html'">отправить код ещё раз</span>.</p>
+    </div>
+    <form action="">
+        <div class="form_column">
+            <div class="input-phone">
+                <input type="tel" id="подтверждения" class="registrTwoInput" placeholder="Код подтверждения">
+            </div>
+        </div>
+
+
+        <button class="Next" type="button" onclick="window.location.href='../pages/'">далее</button>
+    </form>
+</header>
+
+<script src="../js/jQuery.min.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#подтверждения').click(function () {
+            if ($('#подтверждения') === ''){
+                $('.Next').click(function () {
+                    window.location.href='#'
+                })
+            }
+            else $('.Next').click(function () {
+                window.location.href='../pages/reg_full.html'
+            })
+        });
+    })
+</script>
+
+
+
+</body>
+
+</html>

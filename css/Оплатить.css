@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    position: relative;
+}
+
+.title_info {
+    position: absolute;
+    left: 39%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.back {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline-color: transparent;
+    font-size: 23px;
+    color: #C4C4C4;
+}
+
+.a-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.box_flex {
+    width: 385px;
+    height: 150px;
+}
+
+.box_flex .fa {
+    font-size: 80px;
+    color: #2400FF;
+}
+
+.form_flex label {
+    padding: 10px 0;
+}
+
+.box_flex span {
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    margin-left: 40px;
+    color: #333333;
+    letter-spacing: 0.05em;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_flex input::placeholder {
+    color: #B6B6B6;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.form_flex_2 input::placeholder {
+    color: #B6B6B6;
+    font-size: 13px;
+}
+
+.form_column input::placeholder {
+    color: #B6B6B6;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.form_column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #C4C4C4;
+}
+
+.form_flex {
+    display: flex;
+    width: 100%;
+    height: 45px;
+}
+
+.form_flex_2 {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #C4C4C4;
+}
+
+.form_flex_2 .borderL {
+    border-right: 1px solid #C4C4C4;
+}
+
+.form_flex input {
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    outline: #4400FF;
+}
+
+.form_flex_2 input {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 50%;
+    outline: #4400FF;
+}
+
+.form_flex .fa {
+    font-size: 25px;
+    height: 100%;
+    color: #C4C4C4;
+}
+
+.form_column input {
+    height: 45px;
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    outline: #4400FF;
+}
+
+.box_flex p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+    color: #000000;
+}
+
+header form button {
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(270.9deg, #5403FF 0.33%, #00CCFF 99.93%);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-top: 36px;
+    margin-bottom: 25px;
+    outline-color: transparent;
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease-in   infinite;
+}
+
+header form p {
+    margin-top: 16px;
+    color: #939393;
+    font-size: 13px;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media (max-width: 320px){
+    header form p {
+        margin-top: 16px;
+        color: #939393;
+        font-size: 12px;
+        margin-bottom: 16px;
+        letter-spacing: 0.05em;
+    }
+
+    .form_column input {
+        height: 45px;
+        background: #FFFFFF;
+        border: none;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        outline: #4400FF;
+    }
+    .form_flex input {
+        background: #FFFFFF;
+        border: none;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        width: 88%;
+        outline: #4400FF;
+    }
+}

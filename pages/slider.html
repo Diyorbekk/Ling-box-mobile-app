@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper demo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <!-- Link Swiper's CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../package/swiper.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="red">
+                <h2 class="gradient-text">Добро пожаловать!</h2>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="flex">
+                    <h2 class="gradient-text2">3</h2>
+                    <p class="pad-1">Правила для эффективного изучения</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="flex">
+                    <h2 class="gradient-text2">1</h2>
+                    <p>Сконсентрируйтесь</p>
+                    <span>Одновременно читайте и слушайте внимательно</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="flex">
+                    <h2 class="gradient-text2">2</h2>
+                    <p>Слушать минимум 2 часа</p>
+                    <span class="pad-2">Что бы добиться максимального результата, слушайте больше двух часов</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="flex">
+                    <h2 class="gradient-text2">3</h2>
+                    <p>Слушайте каждый урок минимум 7 дней</p>
+                    <span class="pad-3">Слушайте уроки даже по выходным и по праздникам, а так же не начинайте новый урок, пока не закончите предыдущий</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="flex">
+                    <p class="black">Вы готовы к новым переменам?</p>
+                </div>
+
+                <button type="button" onclick="window.location.href='../pages/Boxes_Notifaction.html'">GO!</button>
+            </div>
+        </div>
+        <div class="backImg"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="../package/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true
+            }
+        });
+    </script>
+</body>
+
+</html>

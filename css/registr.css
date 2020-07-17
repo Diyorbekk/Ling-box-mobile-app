@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header .back{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline-color: transparent;
+    top: 2%;
+    left: 5%;
+    font-size: 30px;
+    color: black;
+}
+
+.backText{
+    font-size: 16px;
+    margin-top: 6px;
+    margin-left: 10px;
+    color: #242424;
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.form_column {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 10px;
+}
+
+.form_column input {
+    width: 100%;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 6px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    outline: #4400FF;
+}
+
+.select{
+
+}
+
+label {
+    color: #B6B6B6;
+    font-size: 13px;
+}
+
+.form_column input::placeholder {
+    color: #B6B6B6;
+    font-size: 13px;
+    text-align: center;
+}
+
+form .submit{
+    width: 105px;
+    height: 28px;
+    background: linear-gradient(270.9deg, #5403FF 0.33%, #00CCFF 99.93%);
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    font-size: 12px;
+    margin-top: 45px;
+    cursor: pointer;
+    outline-color: transparent;
+    border: none;
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease-in   infinite;
+}
+
+header button {
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(270.9deg, #5403FF 0.33%, #00CCFF 99.93%);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-top: 36px;
+    margin-bottom: 25px;
+    outline-color: transparent;
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease-in   infinite;
+}
+
+header form a {
+    font-size: 45px;
+    margin-top: 30px;
+    color: #5BB0FF;
+}
+
+header .FAQ {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    color: #323232;
+    font-size: 50px;
+}
+.dropdown-menu > li > a{
+    font-size: 11px;
+    margin-top: 0;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+
+
+

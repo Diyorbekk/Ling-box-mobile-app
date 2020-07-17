@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Уведомление.css">
+    <title>Видеоролики</title>
+
+</head>
+<body>
+<header>
+    <div class="title">
+        <i class="fa fa-angle-left back" onclick="window.location.href='boxes.html'"></i>
+        <h2 class="title_info">Видеоролики</h2>
+    </div>
+    <div class="videoWrapper w-100" id="movie1" >
+        <video class="video" id="videomovie1" src="../video/Dua%20Lipa%20X%20BLACKPINK%20–%20Kiss%20&%20Make%20Up%20(Han%20Rom%20Eng)%20Color%20Coded%20Lyrics%20한국어%20가사.mp4" poster="../images/video-poster.jpg" width="100%"></video>
+        <div class="playpause" id="playIconAnim1">
+            <svg class="playIcon" id="playIcon1"  data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080"><defs><style>.cls-1{fill:#ffffff;stroke:#fff;stroke-miterlimit:10;stroke-width:2.29px;}</style></defs><title>play icon</title><path class="cls-1" d="M971.43,466.38,223.92,34.81C164.61.57,90.47,43.37,90.47,111.86V975c0,68.48,74.14,111.29,133.45,77L971.43,620.48C1030.74,586.24,1030.74,500.63,971.43,466.38Z"/></svg>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-start py-3  px-4 w-100">
+        <img src="../images/Lingbox%20Ava.jpg" class="VideoImg" alt="">
+
+        <p class="mb-0 VideoText ml-3">Презентация LingBox</p>
+    </div>
+
+</header>
+
+
+<script src="../js/jQuery.min.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $('#movie1').click(function () {
+        $('#videomovie1').attr('controls',true);
+    })
+    $('#playIcon1').parent().click(function () {
+        if($("#videomovie1").get(0).paused){
+            $("#videomovie1").get(0).play();
+            $("#playIconAnim1").css({'animation': 'Playpause 2s ease','opacity': '0'});
+        }
+
+        else
+        {
+            $("#videomovie1").get(0).pause();
+            $("#playIconAnim1").css({'animation': 'PlaypauseS 2s ease','opacity': '1'});
+
+        }
+    });
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

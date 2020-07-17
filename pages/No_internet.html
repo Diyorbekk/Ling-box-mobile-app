@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../fonts/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/AllCssStyle.css">
+    <title>No Internet</title>
+</head>
+<body>
+<header class="d-flex flex-column justify-content-center align-items-center NoInternet">
+    <div class="d-flex flex-column align-items-center NoInternetImgBox">
+        <img src="../images/Logoback.png" class="NoInternetImg" alt="" width="190" height="200">
+
+        <h2 class="mt-5">Нет интернет</h2>
+    </div>
+
+    <button type="button" class="btn">Обновить</button>
+
+</header>
+
+
+<script src="../js/jQuery.min.js"></script>
+<script src="../js/popper.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.btn').on('mouseover', function () {
+            $('.NoInternetImg').css('animation', 'NoInternet 1.1s linear infinite')
+        });
+        $('.btn').on('mouseout', function () {
+            $('.NoInternetImg').css('animation', 'NoInternet 5s linear infinite')
+        });
+    });
+
+</script>
+</body>
+</html>

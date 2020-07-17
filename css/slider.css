@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: white;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 91%;
+    z-index: 10;
+}
+
+.flex p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #787878;
+    z-index: 10;
+}
+
+.flex .black {
+    color: black;
+    z-index: 10;
+}
+
+.flex span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0 36px;
+    color: #9f9f9f;
+}
+
+.flex .pad-2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0 27px;
+    color: #9f9f9f;
+    z-index: 10;
+}
+
+.flex .pad-3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    padding: 0;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #9f9f9f;
+    z-index: 10;
+}
+
+.gradient-text {
+    font-size: 29px;
+    font-weight: 800;
+    background: linear-gradient(
+            11.82deg,
+            #00ddff 0.06%,
+            #4400ff 46.48%,
+            #FF06E7 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    z-index: 10;
+    animation: AnimationName 5s infinite;
+}
+
+.gradient-text2 {
+    font-size: 90px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(
+            11.82deg,
+            #FF06E7 10%,
+            #4400ff 46.48%,
+            #00ddff 90.06%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: AnimationName 8s infinite;
+    z-index: 10;
+}
+
+
+button {
+    background: linear-gradient(270.81deg, #5403ff 0.33%, #00ccff 99.93%);
+    border-radius: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    width: 160px;
+    height: 50px;
+    border: none;
+    outline-color: transparent;
+    position: absolute;
+    bottom: 20%;
+    color: #ffffff;
+    background-size: 400% 400%;
+    animation: AnimationButton 5s infinite;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.backImg {
+    background: url(../images/Logoback.png) no-repeat;
+    background-size: 400px 420px;
+    background-position: center;
+     animation: Animation 30s linear infinite;
+    width: 120%;
+    height: 80%;
+    position: absolute;
+    left: -105px;
+    bottom: -12px;
+    opacity: 0.5;
+}
+
+@media (max-width: 375px) {
+    .flex .pad-2 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 0 22px;
+        color: #9f9f9f;
+
+
+    }
+
+    .flex .pad-1 {
+        font-style: normal;
+        font-size: 27px;
+        text-align: center;
+        padding: 0 10px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-bottom: 10px;
+        color: #787878;
+    }
+
+    .flex p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #787878;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+    }
+
+    .flex span {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 0 32px;
+        color: #9f9f9f;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    .flex .pad-1 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        padding: 0 5px;
+        color: #9f9f9f;
+    }
+}
+
+@keyframes Animation {
+    to {
+        transform: rotate(0deg)
+    }
+    from {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-webkit-keyframes AnimationButton {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
